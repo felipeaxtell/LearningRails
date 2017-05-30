@@ -1,3 +1,24 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+*,h1,h2,h3,h4,h5,h6,p { padding: 0; margin: 0; }
+
+/* Header */
+.header{ padding: 20px 15px; overflow: hidden; width: 100%; background-color: $mustard; }
+.header__logo{ float: left; }
+.header__title{ color: #fff; font-size: 30px; }
+.header__link{ text-decoration: none; }
+.header__link:hover{ text-decoration: none; }
+
+/* Panel */
+.panel{ margin: 30px 0px; border: none; }
+.panel__head{ padding: 0 15px; min-height: 20px; background-color: $light_mustard; border: 1px solid $light_mustard; border-radius: 3px 3px 0 0; }
+.panel__title{ color: #fff; font-size: 20px; }
+.panel__content{ padding: 20px 15px; border: 1px solid $light_mustard; }
+.panel__text{ font-size: 16px; margin: 0 0 15px 0; }
+
+/* Button */
+.button{ display: inline-block; color: #fff; padding: 5px 10px; text-decoration: none; border-radius: 3px; }
+.button--hover{ text-decoration: none; color: #fff; cursor: pointer; }
+.button--mustard{ background-color: #f0ac0f; border: 1px solid $mustard; }
+.button--mustard:hover{ @extend .button--hover; background-color: #f9bc0f; border: 1px solid #f9bc0f; }

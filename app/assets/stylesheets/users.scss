@@ -1,17 +1,1 @@
-* { padding: 0; margin: 0; }
-
-/* Theme Color */
-$mustard: #f0ac0f;
-$light_mustard: #f1d188;
-
-/* Button */
-.button{ display: inline-block; color: #fff; padding: 10px; margin: 5px 0px; text-decoration: none; border-radius: 3px; }
-.button--hover{ text-decoration: none; color: #fff; cursor: pointer; }
-.button--mustard{ background-color: #f0ac0f; border: 1px solid $mustard; }
-.button--mustard:hover{ @extend .button--hover; background-color: #f9bc0f; border: 1px solid #f9bc0f; }
-
-/* Banner */
-.banner{ width: 100%; color: #fff; }
-.banner__head{ padding: 10px 10px; background-color: $mustard; }
-.banner__body{ padding: 10px 10px; background-color: $light_mustard; }
-.banner__text{ padding: 15px 0px; }
+.table { margin: 30px 0;}
