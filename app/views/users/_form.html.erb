@@ -1,0 +1,24 @@
+<%= form_for @user, :html => { class: 'form' } do |form| %>
+
+    <div class="form__field">
+      <%= form.label :name, :class => 'form__label' %>
+      <%= form.text_field :name, :class => 'form__text', :placeholder => 'First Name' %>
+    </div>
+    <div class="form__field">
+      <%= form.label :last_name, :class => 'form__label' %>
+      <%= form.text_field :last_name, :class => 'form__text', :placeholder => 'Last Name' %>
+    </div>
+    <div class="form__field">
+      <%= form.label :password, :class => 'form__label' %>
+      <%= form.text_field :password, :class => 'form__text', :type => 'password', :placeholder => 'Password' %>
+    </div>
+    <div class="form__field">
+      <%= form.label :profile_id, :class => 'form__label' %>
+      <%= form.select :profile_id, {'Client':1, 'Developer':2, 'Administrator':3 }, {}, :class => 'form__select' %>
+    </div>
+
+    <div class="form__field">
+      <%= form.submit :class => 'form__button', :value => 'Create!' %>
+    </div>
+
+<% end %>
