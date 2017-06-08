@@ -1,19 +1,18 @@
-// Place all the styles related to the home controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
 *,h1,h2,h3,h4,h5,h6,p { padding: 0; margin: 0; }
 
 /* Header */
 .header{ padding: 20px 15px; overflow: hidden; width: 100%; background-color: $mustard; }
 .header__logo{ float: left; }
-.header__title{ color: #fff; font-size: 30px; }
-.header__link{ text-decoration: none; }
-.header__link:hover{ text-decoration: none; }
+.header__title{ color: #fff; text-decoration: none; font-size: 30px; font-weight: bold; }
+.header__title:hover{ color: #fff; text-decoration: none; }
+.header__list{ float: right; }
+.header__item{ position: relative; top: 10px; color: #fff; padding: 20px 10px; -moz-transition: all 300ms ease-in; -webkit-transition: all 300ms ease-in; -o-transition: all 300ms ease-in; }
+.header__item:hover{ text-decoration: none; background-color: $light_mustard; color: #fff; -moz-transition: all 300ms ease-out; -webkit-transition: all 300ms ease-out; -o-transition: all 300ms ease-out; }
 
 /* Panel */
 .panel{ margin: 30px 0px; border: none; }
-.panel__head{ padding: 0 15px; min-height: 20px; background-color: $light_mustard; border: 1px solid $light_mustard; border-radius: 3px 3px 0 0; }
-.panel__title{ color: #fff; font-size: 20px; }
+.panel__head{ padding: 0 15px; min-height: 25px; background-color: $light_mustard; border: 1px solid $light_mustard; border-radius: 3px 3px 0 0; }
+.panel__title{ color: #fff; font-size: 18px; }
 .panel__content{ padding: 20px 15px; border: 1px solid $light_mustard; }
 .panel__text{ font-size: 16px; margin: 0 0 15px 0; }
 
