@@ -3,14 +3,14 @@
     <div class="container">
       <div class="col-md-4">
         <div class="panel">
-          <div class="panel__head">
+          <div class="panel__head panel--red">
             <span class="panel__title">Information</span>
           </div>
           <div class="panel__content">
             <!-- Use @users.methods to learn more about user object. -->
             <p class="panel__text">There are <%= @users.size %> registered users!</p>
-            <a class="button button--mustard" href="<%= home_index_path %>">Back to home</a>
-            <a class="button button--mustard" href="<%= new_user_path %>">Add User</a>
+            <a class="button button--red" href="<%= home_index_path %>">Back to home</a>
+            <a class="button button--red" href="<%= new_user_path %>">Add User</a>
           </div>
         </div>
       </div>

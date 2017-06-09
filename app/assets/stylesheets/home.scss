@@ -1,23 +1,30 @@
 *,h1,h2,h3,h4,h5,h6,p { padding: 0; margin: 0; }
 
 /* Header */
-.header{ padding: 20px 15px; overflow: hidden; width: 100%; background-color: $mustard; }
-.header__logo{ float: left; }
-.header__title{ color: #fff; text-decoration: none; font-size: 30px; font-weight: bold; }
-.header__title:hover{ color: #fff; text-decoration: none; }
-.header__list{ float: right; }
-.header__item{ position: relative; top: 10px; color: #fff; padding: 20px 10px; -moz-transition: all 300ms ease-in; -webkit-transition: all 300ms ease-in; -o-transition: all 300ms ease-in; }
-.header__item:hover{ text-decoration: none; background-color: $light_mustard; color: #fff; -moz-transition: all 300ms ease-out; -webkit-transition: all 300ms ease-out; -o-transition: all 300ms ease-out; }
-
+.header{ padding: 20px 15px; overflow: hidden; width: 100%; background-color: $dark_red;
+&__logo{ float: left; }
+&__title{ color: #fff; text-decoration: none; font-size: 30px; font-weight: bold; }
+&__title:hover{ color: #fff; text-decoration: none; }
+&__list{ float: right; }
+&__item{ position: relative; top: 10px; color: #fff; padding: 20px 10px; -moz-transition: all 300ms ease-in; -webkit-transition: all 300ms ease-in; -o-transition: all 300ms ease-in; }
+&__item:hover{ text-decoration: none; background-color: $red; color: #fff; -moz-transition: all 300ms ease-out; -webkit-transition: all 300ms ease-out; -o-transition: all 300ms ease-out; }
+}
 /* Panel */
-.panel{ margin: 30px 0px; border: none; }
-.panel__head{ padding: 0 15px; min-height: 25px; background-color: $light_mustard; border: 1px solid $light_mustard; border-radius: 3px 3px 0 0; }
-.panel__title{ color: #fff; font-size: 18px; }
-.panel__content{ padding: 20px 15px; border: 1px solid $light_mustard; }
-.panel__text{ font-size: 16px; margin: 0 0 15px 0; }
-
+.panel{ margin: 30px 0px; border: none; border: 1px solid #ddd;
+&__head{ padding: 0 15px; min-height: 25px; border: 1px solid transparent; border-radius: 3px 3px 0 0; }
+&__title{ color: #fff; font-size: 18px; }
+&__content{ padding: 20px 15px; }
+&__text{ font-size: 16px; margin: 0 0 15px 0; }
+&--red{ background-color: $red; border-color: $dark_red; }
+&--mustard{ background-color: $mustard; border-color: $dark_mustard; }
+}
 /* Button */
-.button{ display: inline-block; color: #fff; padding: 5px 10px; text-decoration: none; border-radius: 3px; }
-.button--hover{ text-decoration: none; color: #fff; cursor: pointer; }
-.button--mustard{ background-color: #f0ac0f; border: 1px solid $mustard; }
-.button--mustard:hover{ @extend .button--hover; background-color: #f9bc0f; border: 1px solid #f9bc0f; }
+.button{ display: inline-block; color: #fff; padding: 5px 10px; text-decoration: none; border-radius: 3px;
+&--hover{ text-decoration: none; color: #fff; cursor: pointer; }
+&--mustard{ background-color: $dark_mustard; border: 1px solid $dark_mustard; }
+&--mustard:hover{ @extend .button--hover; background-color: $mustard; border-color: $mustard; }
+&--red{ background-color: $dark_red; border: 1px solid $red; }
+&--red:hover{ @extend .button--hover; background-color: $red; border-color: $red;}
+&--green{ background-color: $dark_green; border: 1px solid $dark_green; }
+&--green:hover{ @extend .button--hover; background-color: $green; border-color: $green;}
+}
