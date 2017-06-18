@@ -20,5 +20,18 @@
     <div class="form__field">
       <%= form.submit 'Create', :class => 'form__button button--green' %>
     </div>
+    <% if @user.errors.any? %>
+        <div id="error">
+          <h2>
+            <%= pluralize(@user.errors.count, "error") %>
+            Prohibited this user from being saved:
+          </h2>
+          <ul>
+            <% @article.errors.full_messages.each do |msg| %>
+                <li><%= msg %></li>
+            <% end %>
+          </ul>
+        </div>
+    <% end %>
 
 <% end %>
