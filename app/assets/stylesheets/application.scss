@@ -12,7 +12,30 @@
  *
  *= require_self
  */
- @import "bootstrap";
- @import "variables";
- @import "home";
- @import "users";
+
+// Core Variables and mixins
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
+
+// Reset & Dependencies
+@import "bootstrap/glyphicons";
+@import "bootstrap/normalize";
+@import "bootstrap/scaffolding";
+
+// Grid & utilities
+@import "bootstrap/grid";
+@import "bootstrap/code";
+@import "bootstrap/responsive-utilities";
+
+// LearnRails dependencies
+@import "variables";
+@import "utilities/mixins";
+
+// LearnRails Layout
+@import "layout/topbar";
+
+// LearnRails Components
+@import "components/button";
+@import "components/form";
+@import "components/panel";
+@import "components/table";

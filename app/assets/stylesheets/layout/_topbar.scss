@@ -1,0 +1,40 @@
+.header{
+  padding: 20px 15px;
+  overflow: hidden;
+  width: 100%;
+  background-color: $primary_lightblue;
+
+  &__logo{
+    float: left;
+  }
+  &__title{
+    color: #fff;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  &__title:hover{
+    color: #fff;
+    text-decoration: none;
+  }
+  &__list{
+    float: right;
+  }
+  &__item{
+    position: relative;
+    top: 10px;
+    color: #fff;
+    padding: 20px 10px;
+    -moz-transition: all 300ms ease-in;
+    -webkit-transition: all 300ms ease-in;
+    -o-transition: all 300ms ease-in;
+  }
+  &__item:hover{
+    text-decoration: none;
+    background-color: $primary_softblue;
+    color: #fff;
+    -moz-transition: all 300ms ease-out;
+    -webkit-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+  }
+}

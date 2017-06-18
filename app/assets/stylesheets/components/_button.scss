@@ -1,0 +1,26 @@
+.button{
+  @include btn_make;
+  @include btn-color();
+
+  &:hover{
+    @include btn-hover();
+  }
+  &--mustard{
+    @include btn-color($dark_mustard);
+  }
+  &--mustard:hover{
+    @include btn-hover(white,$mustard);
+  }
+  &--red{
+    @include btn-color($dark_red);
+  }
+  &--red:hover{
+    @include btn-hover(white,$red);
+  }
+  &--green{
+    @include btn-color($dark_green);
+  }
+  &--green:hover{
+    @include btn-hover(white,$green);
+  }
+}

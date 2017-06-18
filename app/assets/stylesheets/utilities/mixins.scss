@@ -1,0 +1,26 @@
+/* Buttons */
+
+@mixin btn-color($color: $primary_lightblue){
+  background-color: $color;
+  border: 1px solid $color;
+}
+@mixin btn-hover($font-color: white, $background-color: $primary_softblue){
+  background-color: $background-color;
+  text-decoration: none;
+  color: $font-color;
+  cursor: pointer;
+}
+@mixin btn-make($font_color: white){
+  display: inline-block;
+  color: $font_color;
+  padding: 5px 10px;
+  text-decoration: none;
+  border-radius: 3px;
+}
+
+/* Panels */
+
+@mixin panel-color($background-color: $primary_lightblue, $border-color: $primary_darkblue){
+  background-color: $background-color;
+  border-color: $border-color;
+}

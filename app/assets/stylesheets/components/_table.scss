@@ -1,0 +1,22 @@
+.table{
+  border: 1px solid $primary_darkblue;
+  margin: 30px 0;
+  width: 100%;
+
+  &__row{
+    background-color: $primary_gray;
+    color: $primary_darkblue;
+  }
+  &__cell {
+
+    width: 25%;
+    padding: 10px;
+  }
+  &__head_cell{
+    background-color: $primary_lightblue;
+    color: $primary_white;
+    text-align: left;
+    width: 25%;
+    padding: 10px;
+  }
+}
